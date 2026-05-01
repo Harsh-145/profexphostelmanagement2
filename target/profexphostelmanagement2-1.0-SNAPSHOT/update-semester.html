@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Update Semester</title></head>
+<body>
+    <h2>Update Student Semester</h2>
+    <form action="UpdateSemesterServlet" method="POST">
+        <label>Enrollment No:</label><br>
+        <input type="number" name="enrollment_no" required><br><br>
+
+        <label>New Semester:</label><br>
+        <input type="number" name="sem" required min="1"><br><br>
+
+        <button type="submit">Update Semester</button>
+        <a href="dashboard.html"><button type="button">Back to Dashboard</button></a>
+    </form>
+</body>
+</html>

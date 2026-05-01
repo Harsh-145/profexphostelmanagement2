@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add Student</title></head>
+<body>
+    <h2>Add New Student Record</h2>
+    <form action="AddStudentServlet" method="POST">
+        Enrollment No: <input type="number" name="enrollment_no" required><br><br>
+        Full Name: <input type="text" name="full_name" required><br><br>
+        Gender: 
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        DOB: <input type="date" name="dob" required><br><br>
+        Phone: <input type="text" name="phone" required><br><br>
+        Email: <input type="email" name="email"><br><br>
+        Room No: <input type="number" name="room_no" required><br><br>
+        Semester: <input type="number" name="sem" required min="1"><br><br>
+        <button type="submit">Save Student</button>
+        <br><br>
+        <a href="dashboard.html">Back to Dashboard</a>
+    </form>
+</body>
+</html>
